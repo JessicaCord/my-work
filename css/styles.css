@@ -33,6 +33,7 @@ h1 {
     color: var(--hotpink);
     font-size: 3rem;
     font-style: italic;
+    text-shadow: green 0 -4px;
 }
 
 h2 {
