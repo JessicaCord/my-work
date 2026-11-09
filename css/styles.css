@@ -1,13 +1,17 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 
+/* GENERAL */
+
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
@@ -33,95 +37,92 @@ h3 {
 }
 
 p {
-  color: white;
-  font-size: 1.1rem;
-  font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 ul {
-  color: white;
-background-color: #131821;
-  font-size: 20px;
+    color: white;
+    font-size: 20px;
 }
 
 a {
-  color: #F3161E;
+    color: #F3161E;
 }
 
 a:hover {
-  color: #1181c8;
+    color: #1181c8;
 }
 
-/* img {
-  width: 700px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-} */
+/* BACK TO TOP BUTTON */
 
 .button {
-  border: 2px solid black;
-  background-color: #F50CA0;
-  color: black;
-  text-decoration: none;
-  border-radius: 10px;
-  display: block;
-  width: fit-content;
-  margin: 0 auto;
-  font-size: 1rem;
-  padding: 6px 10px;
+    border: 2px solid black;
+    background-color: #ff9900;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 6px 10px;
 }
 
 .button:hover {
-  background-color: #6f00ff;
-  color: black;
+    background-color: #6f00ff;
+    color: black;
 }
+
+/* HEADER */
 
 .intro {
-  text-align: center;
+    text-align: center;
 }
 
+/* NAVIGATION */
+
 nav a {
-  text-decoration: none;
-  color: #eeff00;
-  font-size: 1.1rem;
+    text-decoration: none;
+    color: #eeff00;
+    font-size: 1.1rem;
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-background-color: #131821;
-  padding-bottom: 2rem;
+    list-style-type: none;
+    padding: 0 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #131821;
 }
 
+/* MAIN SECTIONS */
+
 .allsecs {
-background-color: #131821;
+    background-color: #131821;
 }
 
 .secs {
-  max-width: 800px;
-  border: 2px solid #aa00ff;
-  padding: 1rem;
-  margin: 2rem auto;
-  border-radius: 1.5rem;
+    max-width: 800px;
+    border: 2px solid #aa00ff;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 1.5rem;
 }
 
 .secs ul {
-  background-color: black;
-  color: white;
-   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0;
-  list-style: none;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
 }
 
 .secs li {
-    box-sizing: border-box;
     background-color: #0f1623;
     padding: 12px 10px;
     text-align: center;
@@ -130,36 +131,58 @@ background-color: #131821;
     overflow-wrap: anywhere;
 }
 
-.links-list li {
-    flex: 0 0 calc((100% - 20px) / 3);
+.secs li a {
+    color: #F9F940;
+    text-decoration: none;
 }
+
+.secs li:hover {
+    background-color: #aa00ff;
+}
+
+/* TECHNICAL SKILLS */
+
+.skills-list li {
+    flex: 0 0 calc((100% - 10px) / 2);
+    background-color: #171c29;
+    border: 1px solid #4144ff;
+    border-radius: 12px;
+    padding: 14px;
+    color: #F9F940;
+}
+
+/* ASSIGNMENTS */
 
 .assignments-list li {
     flex: 0 0 calc((100% - 10px) / 2);
 }
 
-.secs li a {
-  color: #F9F940;
-  text-decoration: none;
+/* CONTACT LINKS */
+
+.links-list li {
+    flex: 0 0 calc((100% - 10px) / 2);
 }
 
-.secs li:hover {
-  background-color: #aa00ff;
-}
+/* FOOTER */
 
 footer p {
     text-align: center;
     font-size: 12px;
 }
 
-/* ___________________________________________________________ */
+/* ________________________________________ */
 /* MOBILE */
+
 @media (max-width: 550px) {
 
     .secs {
         padding: 0.5rem;
         margin: 0.5rem;
         width: calc(100% - 1rem);
+    }
+
+    .skills-list li {
+        flex: 0 0 calc((100% - 10px) / 2);
     }
 
     .links-list li {
@@ -171,21 +194,26 @@ footer p {
     }
 
     nav ul {
-        flex-wrap: wrap;
         gap: 10px;
     }
 }
 
+/* ________________________________________ */
 /* TABLET */
+
 @media (min-width: 551px) {
+
     .secs {
         padding: 1rem;
         width: calc(100% - 4rem);
     }
 }
 
+/* ________________________________________ */
 /* DESKTOP */
+
 @media (min-width: 701px) {
+
     .secs {
         padding: 2rem;
         font-size: 1.2rem;
