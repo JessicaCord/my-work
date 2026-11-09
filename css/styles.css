@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --yellow: #F9F940;
+  --hotpink: #F50CA0;
+  --neongreen: #5DF15D;
+  --orange: #FEA303;
+  --royalblue: #2740DA;
+  --violet: #621590;
+
+}
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -13,12 +25,12 @@ html {
 
 body {
     font-family: "Libertinus Sans", sans-serif;
-    background: url(images/black-glittery-background_53876-160437.avif);
+    background: url(/images/black-glittery-background_53876-160437.avif);
     margin: 0;
 }
 
 h1 {
-    color: #F50CA0;
+    color: var(--hotpink);
     font-size: 3rem;
     font-style: italic;
 }
@@ -29,12 +41,12 @@ h2 {
 }
 
 h3 {
-    color: white;
+    color: var(--white);
     font-size: 1.3rem;
 }
 
 p {
-    color: white;
+    color: var(--white);
     font-size: 1.1rem;
 }
 
@@ -54,7 +66,7 @@ a:hover {
 .button {
     border: 2px solid black;
     background-color: #ff9900;
-    color: black;
+    color: var(--black);     
     text-decoration: none;
     border-radius: 10px;
     display: block;
@@ -66,7 +78,7 @@ a:hover {
 
 .button:hover {
     background-color: #6f00ff;
-    color: white;
+    color: var(--white);
 }
 
 .intro {
@@ -75,7 +87,7 @@ a:hover {
 
 nav a {
     text-decoration: none;
-    color: #eeff00;
+    color: var(--yellow);
     font-size: 1.1rem;
 }
 
@@ -102,7 +114,7 @@ nav ul {
 }
 
 .secs ul {
-    color: black;
+    color: var(--black);
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -111,16 +123,16 @@ nav ul {
 }
 
 .secs li {
-    background-color: #212122;
+    background-color: #29292c;
     padding: 12px 10px;
     text-align: center;
     border-radius: 8px;
-    border: 2px solid #620B71;
+    border: 2px solid #1202fc;
     overflow-wrap: anywhere;
 }
 
 .secs li a {
-    color: #F9F940;
+    color: var(--yellow);
     text-decoration: none;
 }
 
@@ -130,11 +142,11 @@ nav ul {
 
 .skills-list li {
     flex: 0 0 calc((100% - 10px) / 2);
-    background-color: #212122;
-    border: 2px solid #620B71;
+    background-color: #29292c;
+    border: 2px solid #1202fc;
     border-radius: 12px;
     padding: 14px;
-    color: #F9F940;
+    color: var(--yellow);
 }
 
 .assignments-list li {
